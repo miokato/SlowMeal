@@ -15,6 +15,7 @@
 		95C6261E25AC2DDC0006219E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C6261C25AC2DDC0006219E /* LaunchScreen.storyboard */; };
 		95C6262925AC2DDC0006219E /* SlowMealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6262825AC2DDC0006219E /* SlowMealTests.swift */; };
 		95C6263425AC2DDC0006219E /* SlowMealUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6263325AC2DDC0006219E /* SlowMealUITests.swift */; };
+		95E0D98825AC3A51007555DD /* UserNotifMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0D98725AC3A51007555DD /* UserNotifMaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		95C6262F25AC2DDC0006219E /* SlowMealUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowMealUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C6263325AC2DDC0006219E /* SlowMealUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowMealUITests.swift; sourceTree = "<group>"; };
 		95C6263525AC2DDC0006219E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95E0D98725AC3A51007555DD /* UserNotifMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotifMaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				95C6261125AC2DDB0006219E /* AppDelegate.swift */,
 				95C6261325AC2DDB0006219E /* SceneDelegate.swift */,
 				95C6261525AC2DDB0006219E /* ViewController.swift */,
+				95E0D98725AC3A51007555DD /* UserNotifMaker.swift */,
 				95C6261725AC2DDB0006219E /* Main.storyboard */,
 				95C6261A25AC2DDC0006219E /* Assets.xcassets */,
 				95C6261C25AC2DDC0006219E /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			files = (
 				95C6261625AC2DDB0006219E /* ViewController.swift in Sources */,
 				95C6261225AC2DDB0006219E /* AppDelegate.swift in Sources */,
+				95E0D98825AC3A51007555DD /* UserNotifMaker.swift in Sources */,
 				95C6261425AC2DDB0006219E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
