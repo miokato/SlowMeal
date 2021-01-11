@@ -7,12 +7,24 @@
 
 import UIKit
 import UserNotifications
+import RealmSwift
 
 class ViewController: UIViewController {
+    
+    var realm: Realm!
 
     @IBOutlet weak var messageLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        realm = try! Realm()
+        
+        let allData = realm.objects(Meal.self)
+        print(allData.count)
+        for data in allData {
+            print(data.name)
+        }
+        print(allData)
         
         UserNotifMaker.shared.add(title: "朝ごはん",
                                   body: Constants.USER_NOTIFY_BODY,

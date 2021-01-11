@@ -7,6 +7,7 @@
 
 import UIKit
 import UserNotifications
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
