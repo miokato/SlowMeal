@@ -48,8 +48,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        print("notify")
         completionHandler([.badge, .sound])
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        if let vc = UIApplication.shared.windows.first?.rootViewController {
+            vc.performSegue(withIdentifier: Constants.SEGUE_ID_INPUT_MODAL, sender: nil)
+        }
+
+        completionHandler()
+
     }
 }
 
