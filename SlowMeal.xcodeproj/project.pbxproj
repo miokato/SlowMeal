@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95C6261225AC2DDB0006219E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6261125AC2DDB0006219E /* AppDelegate.swift */; };
+		95C6261425AC2DDB0006219E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6261325AC2DDB0006219E /* SceneDelegate.swift */; };
+		95C6261625AC2DDB0006219E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6261525AC2DDB0006219E /* ViewController.swift */; };
+		95C6261925AC2DDB0006219E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C6261725AC2DDB0006219E /* Main.storyboard */; };
+		95C6261B25AC2DDC0006219E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C6261A25AC2DDC0006219E /* Assets.xcassets */; };
+		95C6261E25AC2DDC0006219E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C6261C25AC2DDC0006219E /* LaunchScreen.storyboard */; };
+		95C6262925AC2DDC0006219E /* SlowMealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6262825AC2DDC0006219E /* SlowMealTests.swift */; };
+		95C6263425AC2DDC0006219E /* SlowMealUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6263325AC2DDC0006219E /* SlowMealUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95C6262525AC2DDC0006219E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C6260625AC2DDB0006219E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C6260D25AC2DDB0006219E;
+			remoteInfo = SlowMeal;
+		};
+		95C6263025AC2DDC0006219E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C6260625AC2DDB0006219E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C6260D25AC2DDB0006219E;
+			remoteInfo = SlowMeal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		95C6260E25AC2DDB0006219E /* SlowMeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlowMeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C6261125AC2DDB0006219E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95C6261325AC2DDB0006219E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		95C6261525AC2DDB0006219E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95C6261825AC2DDB0006219E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95C6261A25AC2DDC0006219E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95C6261D25AC2DDC0006219E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95C6261F25AC2DDC0006219E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C6262425AC2DDC0006219E /* SlowMealTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowMealTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C6262825AC2DDC0006219E /* SlowMealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowMealTests.swift; sourceTree = "<group>"; };
+		95C6262A25AC2DDC0006219E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C6262F25AC2DDC0006219E /* SlowMealUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowMealUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C6263325AC2DDC0006219E /* SlowMealUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowMealUITests.swift; sourceTree = "<group>"; };
+		95C6263525AC2DDC0006219E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95C6260B25AC2DDB0006219E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C6262125AC2DDC0006219E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C6262C25AC2DDC0006219E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95C6260525AC2DDB0006219E = {
+			isa = PBXGroup;
+			children = (
+				95C6261025AC2DDB0006219E /* SlowMeal */,
+				95C6262725AC2DDC0006219E /* SlowMealTests */,
+				95C6263225AC2DDC0006219E /* SlowMealUITests */,
+				95C6260F25AC2DDB0006219E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95C6260F25AC2DDB0006219E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95C6260E25AC2DDB0006219E /* SlowMeal.app */,
+				95C6262425AC2DDC0006219E /* SlowMealTests.xctest */,
+				95C6262F25AC2DDC0006219E /* SlowMealUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95C6261025AC2DDB0006219E /* SlowMeal */ = {
+			isa = PBXGroup;
+			children = (
+				95C6261125AC2DDB0006219E /* AppDelegate.swift */,
+				95C6261325AC2DDB0006219E /* SceneDelegate.swift */,
+				95C6261525AC2DDB0006219E /* ViewController.swift */,
+				95C6261725AC2DDB0006219E /* Main.storyboard */,
+				95C6261A25AC2DDC0006219E /* Assets.xcassets */,
+				95C6261C25AC2DDC0006219E /* LaunchScreen.storyboard */,
+				95C6261F25AC2DDC0006219E /* Info.plist */,
+			);
+			path = SlowMeal;
+			sourceTree = "<group>";
+		};
+		95C6262725AC2DDC0006219E /* SlowMealTests */ = {
+			isa = PBXGroup;
+			children = (
+				95C6262825AC2DDC0006219E /* SlowMealTests.swift */,
+				95C6262A25AC2DDC0006219E /* Info.plist */,
+			);
+			path = SlowMealTests;
+			sourceTree = "<group>";
+		};
+		95C6263225AC2DDC0006219E /* SlowMealUITests */ = {
+			isa = PBXGroup;
+			children = (
+				95C6263325AC2DDC0006219E /* SlowMealUITests.swift */,
+				95C6263525AC2DDC0006219E /* Info.plist */,
+			);
+			path = SlowMealUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95C6260D25AC2DDB0006219E /* SlowMeal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C6263825AC2DDC0006219E /* Build configuration list for PBXNativeTarget "SlowMeal" */;
+			buildPhases = (
+				95C6260A25AC2DDB0006219E /* Sources */,
+				95C6260B25AC2DDB0006219E /* Frameworks */,
+				95C6260C25AC2DDB0006219E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlowMeal;
+			productName = SlowMeal;
+			productReference = 95C6260E25AC2DDB0006219E /* SlowMeal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95C6262325AC2DDC0006219E /* SlowMealTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C6263B25AC2DDC0006219E /* Build configuration list for PBXNativeTarget "SlowMealTests" */;
+			buildPhases = (
+				95C6262025AC2DDC0006219E /* Sources */,
+				95C6262125AC2DDC0006219E /* Frameworks */,
+				95C6262225AC2DDC0006219E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95C6262625AC2DDC0006219E /* PBXTargetDependency */,
+			);
+			name = SlowMealTests;
+			productName = SlowMealTests;
+			productReference = 95C6262425AC2DDC0006219E /* SlowMealTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		95C6262E25AC2DDC0006219E /* SlowMealUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C6263E25AC2DDC0006219E /* Build configuration list for PBXNativeTarget "SlowMealUITests" */;
+			buildPhases = (
+				95C6262B25AC2DDC0006219E /* Sources */,
+				95C6262C25AC2DDC0006219E /* Frameworks */,
+				95C6262D25AC2DDC0006219E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95C6263125AC2DDC0006219E /* PBXTargetDependency */,
+			);
+			name = SlowMealUITests;
+			productName = SlowMealUITests;
+			productReference = 95C6262F25AC2DDC0006219E /* SlowMealUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95C6260625AC2DDB0006219E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					95C6260D25AC2DDB0006219E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					95C6262325AC2DDC0006219E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 95C6260D25AC2DDB0006219E;
+					};
+					95C6262E25AC2DDC0006219E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 95C6260D25AC2DDB0006219E;
+					};
+				};
+			};
+			buildConfigurationList = 95C6260925AC2DDB0006219E /* Build configuration list for PBXProject "SlowMeal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95C6260525AC2DDB0006219E;
+			productRefGroup = 95C6260F25AC2DDB0006219E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95C6260D25AC2DDB0006219E /* SlowMeal */,
+				95C6262325AC2DDC0006219E /* SlowMealTests */,
+				95C6262E25AC2DDC0006219E /* SlowMealUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95C6260C25AC2DDB0006219E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C6261E25AC2DDC0006219E /* LaunchScreen.storyboard in Resources */,
+				95C6261B25AC2DDC0006219E /* Assets.xcassets in Resources */,
+				95C6261925AC2DDB0006219E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C6262225AC2DDC0006219E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C6262D25AC2DDC0006219E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95C6260A25AC2DDB0006219E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C6261625AC2DDB0006219E /* ViewController.swift in Sources */,
+				95C6261225AC2DDB0006219E /* AppDelegate.swift in Sources */,
+				95C6261425AC2DDB0006219E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C6262025AC2DDC0006219E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C6262925AC2DDC0006219E /* SlowMealTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C6262B25AC2DDC0006219E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C6263425AC2DDC0006219E /* SlowMealUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95C6262625AC2DDC0006219E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95C6260D25AC2DDB0006219E /* SlowMeal */;
+			targetProxy = 95C6262525AC2DDC0006219E /* PBXContainerItemProxy */;
+		};
+		95C6263125AC2DDC0006219E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95C6260D25AC2DDB0006219E /* SlowMeal */;
+			targetProxy = 95C6263025AC2DDC0006219E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95C6261725AC2DDB0006219E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95C6261825AC2DDB0006219E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95C6261C25AC2DDC0006219E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95C6261D25AC2DDC0006219E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95C6263625AC2DDC0006219E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95C6263725AC2DDC0006219E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95C6263925AC2DDC0006219E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9EDNBZ44B;
+				INFOPLIST_FILE = SlowMeal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.si-ro.SlowMeal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95C6263A25AC2DDC0006219E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9EDNBZ44B;
+				INFOPLIST_FILE = SlowMeal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.si-ro.SlowMeal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		95C6263C25AC2DDC0006219E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9EDNBZ44B;
+				INFOPLIST_FILE = SlowMealTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.si-ro.SlowMealTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlowMeal.app/SlowMeal";
+			};
+			name = Debug;
+		};
+		95C6263D25AC2DDC0006219E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9EDNBZ44B;
+				INFOPLIST_FILE = SlowMealTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.si-ro.SlowMealTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlowMeal.app/SlowMeal";
+			};
+			name = Release;
+		};
+		95C6263F25AC2DDC0006219E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9EDNBZ44B;
+				INFOPLIST_FILE = SlowMealUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.si-ro.SlowMealUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlowMeal;
+			};
+			name = Debug;
+		};
+		95C6264025AC2DDC0006219E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R9EDNBZ44B;
+				INFOPLIST_FILE = SlowMealUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.si-ro.SlowMealUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlowMeal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95C6260925AC2DDB0006219E /* Build configuration list for PBXProject "SlowMeal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C6263625AC2DDC0006219E /* Debug */,
+				95C6263725AC2DDC0006219E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C6263825AC2DDC0006219E /* Build configuration list for PBXNativeTarget "SlowMeal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C6263925AC2DDC0006219E /* Debug */,
+				95C6263A25AC2DDC0006219E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C6263B25AC2DDC0006219E /* Build configuration list for PBXNativeTarget "SlowMealTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C6263C25AC2DDC0006219E /* Debug */,
+				95C6263D25AC2DDC0006219E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C6263E25AC2DDC0006219E /* Build configuration list for PBXNativeTarget "SlowMealUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C6263F25AC2DDC0006219E /* Debug */,
+				95C6264025AC2DDC0006219E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95C6260625AC2DDB0006219E /* Project object */;
+}
