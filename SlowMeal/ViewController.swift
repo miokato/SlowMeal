@@ -11,6 +11,7 @@ import RealmSwift
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
     var realm: Realm!
 
     @IBOutlet weak var messageLabel: UILabel!
@@ -19,13 +20,9 @@ class ViewController: UIViewController {
         
         realm = try! Realm()
         
-        let allData = realm.objects(Meal.self)
-        print(allData.count)
-        for data in allData {
-            print(data.name)
-        }
-        print(allData)
-        
+        tableView.delegate = self
+        tableView.dataSource = self
+                       
         UserNotifMaker.shared.add(title: "朝ごはん",
                                   body: Constants.USER_NOTIFY_BODY,
                                   hour: Constants.BREAKFAST_HOUR,
@@ -39,6 +36,7 @@ class ViewController: UIViewController {
                                   hour: Constants.DINNER_HOUR,
                                   minute: Constants.DINNER_MINUTE)
         
+        // UI
         messageLabel.text = Constants.USER_NOTIFY_BODY
         
     }
@@ -48,3 +46,20 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: UITableViewDelegate {
+    
+}
+
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let allData = realm.objects(Meal.self)
+        return allData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let meals = realm.objects(Meal.self)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = meals[indexPath.row].name
+        return cell
+    }
+}
