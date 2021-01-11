@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95B8A46B25AC756F009F6129 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B8A46A25AC756F009F6129 /* Constants.swift */; };
+		95B8A47025AC7ADB009F6129 /* InputMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B8A46F25AC7ADB009F6129 /* InputMealViewController.swift */; };
 		95C6261225AC2DDB0006219E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6261125AC2DDB0006219E /* AppDelegate.swift */; };
 		95C6261425AC2DDB0006219E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6261325AC2DDB0006219E /* SceneDelegate.swift */; };
 		95C6261625AC2DDB0006219E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6261525AC2DDB0006219E /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		95B8A46A25AC756F009F6129 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		95B8A46F25AC7ADB009F6129 /* InputMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMealViewController.swift; sourceTree = "<group>"; };
 		95C6260E25AC2DDB0006219E /* SlowMeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlowMeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C6261125AC2DDB0006219E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95C6261325AC2DDB0006219E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				95C6261125AC2DDB0006219E /* AppDelegate.swift */,
 				95C6261325AC2DDB0006219E /* SceneDelegate.swift */,
 				95C6261525AC2DDB0006219E /* ViewController.swift */,
+				95B8A46F25AC7ADB009F6129 /* InputMealViewController.swift */,
+				95B8A46A25AC756F009F6129 /* Constants.swift */,
 				95E0D98725AC3A51007555DD /* UserNotifMaker.swift */,
 				95C6261725AC2DDB0006219E /* Main.storyboard */,
 				95C6261A25AC2DDC0006219E /* Assets.xcassets */,
@@ -261,6 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B8A47025AC7ADB009F6129 /* InputMealViewController.swift in Sources */,
+				95B8A46B25AC756F009F6129 /* Constants.swift in Sources */,
 				95C6261625AC2DDB0006219E /* ViewController.swift in Sources */,
 				95C6261225AC2DDB0006219E /* AppDelegate.swift in Sources */,
 				95E0D98825AC3A51007555DD /* UserNotifMaker.swift in Sources */,

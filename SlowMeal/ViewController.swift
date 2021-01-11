@@ -14,21 +14,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let message = "よく噛んで３０分かけてゆっくりご飯を食べましょう。"
-        UserNotifMaker.shared.add(title: "朝ごはん", body: message, hour: 8, minute: 00)
-        UserNotifMaker.shared.add(title: "お昼ごはん", body: message, hour: 12, minute: 00)
-        UserNotifMaker.shared.add(title: "晩ごはん", body: message, hour: 18, minute: 00)
+        UserNotifMaker.shared.add(title: "朝ごはん",
+                                  body: Constants.USER_NOTIFY_BODY,
+                                  hour: Constants.BREAKFAST_HOUR,
+                                  minute: Constants.BREAKFAST_MINUTE)
+        UserNotifMaker.shared.add(title: "お昼ごはん",
+                                  body: Constants.USER_NOTIFY_BODY,
+                                  hour: Constants.LUNCH_HOUR,
+                                  minute: Constants.LUNCH_MINUTE)
+        UserNotifMaker.shared.add(title: "晩ごはん",
+                                  body: Constants.USER_NOTIFY_BODY,
+                                  hour: Constants.DINNER_HOUR,
+                                  minute: Constants.DINNER_MINUTE)
         
-        messageLabel.text = message
+        messageLabel.text = Constants.USER_NOTIFY_BODY
         
     }
-    
-
-    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        performSegue(withIdentifier: Constants.SEGUE_ID_INPUT_MODAL, sender: nil)
     }
-
-
 }
 
