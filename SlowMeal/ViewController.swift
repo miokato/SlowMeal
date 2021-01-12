@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    @IBAction func pressedAddBtn(_ sender: UIButton) {
         performSegue(withIdentifier: Constants.SEGUE_ID_INPUT_MODAL, sender: nil)
     }
 }

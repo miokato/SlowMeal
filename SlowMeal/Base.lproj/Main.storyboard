@@ -49,10 +49,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNW-MQ-Lhe">
+                                <rect key="frame" x="188.5" y="183.5" width="37" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="ELz-0n-rBq"/>
+                                    <constraint firstAttribute="width" constant="37" id="scM-pP-lbi"/>
+                                </constraints>
+                                <state key="normal" title="追加"/>
+                                <connections>
+                                    <action selector="pressedAddBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OJy-Yj-GHn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="eNW-MQ-Lhe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4mM-iN-rB3"/>
+                            <constraint firstItem="eNW-MQ-Lhe" firstAttribute="top" secondItem="gs7-Gc-Nvy" secondAttribute="bottom" constant="60" id="647-J9-bk8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="61t-bc-0cd" secondAttribute="bottom" constant="20" id="Kzp-ZN-ns9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="61t-bc-0cd" secondAttribute="trailing" constant="20" id="RUE-PF-cmq"/>
                             <constraint firstItem="gs7-Gc-Nvy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="XFI-Fr-B35"/>
