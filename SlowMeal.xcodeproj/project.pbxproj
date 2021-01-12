@@ -10,6 +10,7 @@
 		8D52E18050F924A4534E6BB8 /* Pods_SlowMealTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF81C9EF570D1CDB1156088 /* Pods_SlowMealTests.framework */; };
 		9554E00825AC8D6D00A16E65 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554E00725AC8D6D00A16E65 /* Meal.swift */; };
 		9554E00925AC8D6D00A16E65 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554E00725AC8D6D00A16E65 /* Meal.swift */; };
+		95AF8A8525ADC5D500D00DBB /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AF8A8425ADC5D500D00DBB /* MealTableViewController.swift */; };
 		95B8A46B25AC756F009F6129 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B8A46A25AC756F009F6129 /* Constants.swift */; };
 		95B8A47025AC7ADB009F6129 /* InputMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B8A46F25AC7ADB009F6129 /* InputMealViewController.swift */; };
 		95C6261225AC2DDB0006219E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6261125AC2DDB0006219E /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 		45695E3ED1B72B39E903EA8C /* Pods_SlowMeal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlowMeal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7937491F7AAA55944E20B345 /* Pods-SlowMeal-SlowMealUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlowMeal-SlowMealUITests.debug.xcconfig"; path = "Target Support Files/Pods-SlowMeal-SlowMealUITests/Pods-SlowMeal-SlowMealUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9554E00725AC8D6D00A16E65 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		95AF8A8425ADC5D500D00DBB /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 		95B8A46A25AC756F009F6129 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		95B8A46F25AC7ADB009F6129 /* InputMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMealViewController.swift; sourceTree = "<group>"; };
 		95C6260E25AC2DDB0006219E /* SlowMeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlowMeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,7 @@
 				95C6261325AC2DDB0006219E /* SceneDelegate.swift */,
 				95C6261525AC2DDB0006219E /* ViewController.swift */,
 				95B8A46F25AC7ADB009F6129 /* InputMealViewController.swift */,
+				95AF8A8425ADC5D500D00DBB /* MealTableViewController.swift */,
 				95B8A46A25AC756F009F6129 /* Constants.swift */,
 				9554E00725AC8D6D00A16E65 /* Meal.swift */,
 				95E0D98725AC3A51007555DD /* UserNotifMaker.swift */,
@@ -425,6 +428,7 @@
 				95C6261625AC2DDB0006219E /* ViewController.swift in Sources */,
 				95C6261225AC2DDB0006219E /* AppDelegate.swift in Sources */,
 				95E0D98825AC3A51007555DD /* UserNotifMaker.swift in Sources */,
+				95AF8A8525ADC5D500D00DBB /* MealTableViewController.swift in Sources */,
 				95C6261425AC2DDB0006219E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

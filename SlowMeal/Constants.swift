@@ -8,7 +8,7 @@
 import UIKit
 
 class Constants {
-    static let USER_NOTIFY_BODY = "ごはんは３０回以上噛んでゆっくり食べましょう。"
+    static let USER_NOTIFY_BODY = "３０回よく噛んでゆっくり食べましょう"
     static let BREAKFAST_HOUR: Int = 8
     static let BREAKFAST_MINUTE: Int = 0
     static let LUNCH_HOUR: Int = 12

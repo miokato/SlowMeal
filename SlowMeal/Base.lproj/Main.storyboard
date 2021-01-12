@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Etb-Uy-mFm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="SlowMeal" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,75 +16,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ご飯はゆっくりよく噛んで食べましょうーーーーーーーーーーーー" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gs7-Gc-Nvy">
-                                <rect key="frame" x="20" y="84" width="374" height="39.5"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="３０回よく噛んで" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gs7-Gc-Nvy">
+                                <rect key="frame" x="0.0" y="364" width="414" height="32.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="61t-bc-0cd">
-                                <rect key="frame" x="20" y="342" width="374" height="500"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNW-MQ-Lhe">
+                                <rect key="frame" x="360" y="44" width="34" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="gSH-ws-PzV"/>
+                                    <constraint firstAttribute="height" constant="34" id="35p-Zg-KWn"/>
+                                    <constraint firstAttribute="width" constant="34" id="5dv-8U-hsf"/>
                                 </constraints>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="2Vy-pE-taL">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Vy-pE-taL" id="t7N-94-U5e">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最近食べたごはん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXl-VT-oGs">
-                                <rect key="frame" x="20" y="313" width="140" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="FP2-t9-bJd"/>
-                                    <constraint firstAttribute="height" constant="21" id="aI7-1x-8Un"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNW-MQ-Lhe">
-                                <rect key="frame" x="188.5" y="183.5" width="37" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="ELz-0n-rBq"/>
-                                    <constraint firstAttribute="width" constant="37" id="scM-pP-lbi"/>
-                                </constraints>
-                                <state key="normal" title="追加"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedAddBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OJy-Yj-GHn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ゆっくり食べましょう🍙" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxz-p7-vAj">
+                                <rect key="frame" x="0.0" y="396.5" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FM2-ke-iZt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eNW-MQ-Lhe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4mM-iN-rB3"/>
-                            <constraint firstItem="eNW-MQ-Lhe" firstAttribute="top" secondItem="gs7-Gc-Nvy" secondAttribute="bottom" constant="60" id="647-J9-bk8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="61t-bc-0cd" secondAttribute="bottom" constant="20" id="Kzp-ZN-ns9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="61t-bc-0cd" secondAttribute="trailing" constant="20" id="RUE-PF-cmq"/>
-                            <constraint firstItem="gs7-Gc-Nvy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="XFI-Fr-B35"/>
-                            <constraint firstItem="61t-bc-0cd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fGh-eQ-Flx"/>
-                            <constraint firstItem="61t-bc-0cd" firstAttribute="top" secondItem="YXl-VT-oGs" secondAttribute="bottom" constant="8" symbolic="YES" id="fsJ-DY-3X2"/>
-                            <constraint firstItem="YXl-VT-oGs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="m6L-sG-uTN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gs7-Gc-Nvy" secondAttribute="trailing" constant="20" id="sV8-yF-y1k"/>
-                            <constraint firstItem="gs7-Gc-Nvy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xQ3-4p-kvy"/>
+                            <constraint firstItem="gs7-Gc-Nvy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="320" id="3x5-t8-H7L"/>
+                            <constraint firstItem="fxz-p7-vAj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BWV-35-shQ"/>
+                            <constraint firstItem="gs7-Gc-Nvy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LIL-Cl-L1c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gs7-Gc-Nvy" secondAttribute="trailing" id="NJQ-7z-jDL"/>
+                            <constraint firstItem="eNW-MQ-Lhe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Zcf-O5-YZi"/>
+                            <constraint firstItem="fxz-p7-vAj" firstAttribute="top" secondItem="gs7-Gc-Nvy" secondAttribute="bottom" id="dI2-jC-Mce"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eNW-MQ-Lhe" secondAttribute="trailing" constant="20" id="mDk-Xk-CFw"/>
+                            <constraint firstItem="gs7-Gc-Nvy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qXI-jD-aOP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fxz-p7-vAj" secondAttribute="trailing" id="wWn-Ac-1El"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="HMO-tu-dAY"/>
                     <connections>
-                        <outlet property="messageLabel" destination="gs7-Gc-Nvy" id="3BI-0J-uqq"/>
-                        <outlet property="tableView" destination="61t-bc-0cd" id="9yI-0p-TDF"/>
                         <segue destination="4Ad-jl-bar" kind="presentation" identifier="InputModal" id="vq9-N7-MR2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="101.78571428571428"/>
+            <point key="canvasLocation" x="1042.0289855072465" y="101.78571428571428"/>
+        </scene>
+        <!--最近食べたご飯-->
+        <scene sceneID="qls-nM-TbX">
+            <objects>
+                <viewController id="Soi-e6-qXi" customClass="MealTableViewController" customModule="SlowMeal" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aUG-fC-rxR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="yZo-OP-cez">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yZo-OP-cez" id="wEN-4e-vU2">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="最近食べたご飯" id="29Y-yb-ffE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XuB-HO-znF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950.7246376811595" y="828.34821428571422"/>
         </scene>
         <!--Input Meal View Controller-->
         <scene sceneID="V5W-l1-vmo">
@@ -140,7 +147,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mzk-ra-v18" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1008.6956521739131" y="101.78571428571428"/>
+            <point key="canvasLocation" x="1918.840579710145" y="101.78571428571428"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nEk-OB-opb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Etb-Uy-mFm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pPG-E8-1ZU">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Rwf-tq-CHM"/>
+                        <segue destination="UCa-cx-TSr" kind="relationship" relationship="viewControllers" id="irY-2r-diS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0R7-jZ-2On" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="101.78571428571428"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="EUk-Jc-9E7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UCa-cx-TSr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="LxX-vN-0AI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mjN-zd-heo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Soi-e6-qXi" kind="relationship" relationship="rootViewController" id="QLO-Da-OoT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ien-hl-np8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040.5797101449275" y="828.34821428571422"/>
         </scene>
     </scenes>
     <resources>

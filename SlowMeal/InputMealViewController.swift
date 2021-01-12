@@ -35,9 +35,6 @@ class InputMealViewController: UIViewController {
                 realm.add(meal)
             }
         }
-        if let vc = presentingViewController as? ViewController {
-            vc.tableView.reloadData()
-        }
         dismiss(animated: true, completion: nil)
     }
     
