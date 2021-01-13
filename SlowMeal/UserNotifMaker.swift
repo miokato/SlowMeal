@@ -13,15 +13,14 @@ class UserNotifMaker {
     
     static var shared = UserNotifMaker()
     
-    public func add(title: String, body: String, hour: Int, minute: Int) {
+    public func add(id: String, title: String, body: String, hour: Int, minute: Int) {
         let content = makeContent(title: title, body: body)
         let trigger = makeCalenderTrigger(hour: hour, minute: minute)
-        addUserNotification(trigger: trigger, content: content)
+        addUserNotification(id: id, trigger: trigger, content: content)
     }
 
-    private func addUserNotification(trigger: UNCalendarNotificationTrigger, content: UNNotificationContent) {
-        let uuidString = UUID().uuidString
-        let request = UNNotificationRequest(identifier: uuidString,
+    private func addUserNotification(id: String, trigger: UNCalendarNotificationTrigger, content: UNNotificationContent) {
+        let request = UNNotificationRequest(identifier: id,
                                             content: content,
                                             trigger: trigger)
         let center = UNUserNotificationCenter.current()
