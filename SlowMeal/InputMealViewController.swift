@@ -34,8 +34,9 @@ class InputMealViewController: UIViewController {
             let meal = Meal()
             meal.name = mealName
             meal.subMealName = subMealName
-            meal.date = Date()
-            
+            let date = Date()
+            meal.date = date
+            meal.mealType = MealType.getType(fromTime: Calendar.current.component(.hour, from: date)).rawValue            
             try! realm.write {
                 realm.add(meal)
             }

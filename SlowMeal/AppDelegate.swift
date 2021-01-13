@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // realm migration
-        migrate(schemeVersion: 2)
+        migrate(schemeVersion: 3)
         
         // User notification
         let center = UNUserNotificationCenter.current()

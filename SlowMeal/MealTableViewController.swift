@@ -53,17 +53,13 @@ class MealTableViewController: UITableViewController {
         f.locale = Locale(identifier: "ja_JP")
         let date = meals[indexPath.row].date
         var dateStr = ""
-        var typeStr = ""
+        let mealType = meals[indexPath.row].mealType
         if let date = date {
             dateStr = f.string(from: date)
-            let hour = Calendar.current.component(.hour, from: date)
-            print(hour)
-            let type = MealType.getType(fromTime: hour)
-            typeStr = type.rawValue
         }
         let name = meals[indexPath.row].name
         let subMealName = meals[indexPath.row].subMealName
-        let title = "\(dateStr) [\(typeStr)] \(name)、\(subMealName)"
+        let title = "\(dateStr) [\(mealType)] \(name)、\(subMealName)"
         
         cell.textLabel?.text = title
         return cell
