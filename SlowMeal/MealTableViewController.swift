@@ -44,7 +44,8 @@ class MealTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let meals = realm.objects(Meal.self)
+        var meals = realm.objects(Meal.self)
+        meals = meals.sorted(byKeyPath: "date", ascending: false)
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let f = DateFormatter()
         f.dateStyle = .short
