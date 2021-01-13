@@ -10,4 +10,5 @@ import RealmSwift
 
 class Meal: Object {
     @objc dynamic var name = ""
+    @objc dynamic var date: Date?
 }

@@ -46,7 +46,19 @@ class MealTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let meals = realm.objects(Meal.self)
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = meals[indexPath.row].name
+        let f = DateFormatter()
+        f.dateStyle = .short
+        f.timeStyle = .none
+        f.locale = Locale(identifier: "ja_JP")
+        let date = meals[indexPath.row].date
+        var dateStr = ""
+        if let date = date {
+            dateStr = f.string(from: date)
+        }
+        let name = meals[indexPath.row].name
+        let title = "\(dateStr) \(name)"
+        
+        cell.textLabel?.text = title
         return cell
     }
 

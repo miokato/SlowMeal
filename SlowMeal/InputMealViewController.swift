@@ -30,6 +30,7 @@ class InputMealViewController: UIViewController {
         if mealName != "" {
             let meal = Meal()
             meal.name = mealName
+            meal.date = Date()
             
             try! realm.write {
                 realm.add(meal)
