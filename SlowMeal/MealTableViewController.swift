@@ -15,6 +15,8 @@ class MealTableViewController: UITableViewController {
     var mealType: MealType = .All
     
     var realm: Realm!
+    
+    var selectedMeal: Meal?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,10 +38,42 @@ class MealTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
     }
+    // MARK: - Actions
     @IBAction func pressedBarButtonItem(_ sender: UIBarButtonItem) {
         mealType = mealType.next()
         navigationController?.navigationBar.topItem?.title = "最近食べた\(mealType.rawValue)"
         tableView.reloadData()
+    }
+    
+    // MARK: - Utils
+    func selecteMeals() -> Results<Meal> {
+        var meals = realm.objects(Meal.self)
+        if mealType != .All {
+            meals = meals.filter("mealType == '\(mealType.rawValue)'")
+        }
+        meals = meals.sorted(byKeyPath: "date", ascending: false)
+        return meals
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedMeal = selectedMeal else { return }
+        if segue.identifier == "DetailMeal" {
+            guard let nextVC = segue.destination as? DetailMealViewController else { return }
+            if let date = selectedMeal.date {
+                nextVC.dateText = date.description
+            }
+            nextVC.mainMealText = selectedMeal.name
+            nextVC.subMealText = selectedMeal.subMealName
+        }
+    }
+    
+    // MARK: - Table view delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let meals = selecteMeals()
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        selectedMeal = meals[indexPath.row]
+        performSegue(withIdentifier: "DetailMeal", sender: nil)
     }
     
     // MARK: - Table view data source
@@ -50,19 +84,13 @@ class MealTableViewController: UITableViewController {
 //    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var meals = realm.objects(Meal.self)
-        if mealType != .All {
-            meals = meals.filter("mealType == '\(mealType.rawValue)'")
-        }
+        let meals = selecteMeals()
+
         return meals.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var meals = realm.objects(Meal.self)
-        if mealType != .All {
-            meals = meals.filter("mealType == '\(mealType.rawValue)'")
-        }
-        meals = meals.sorted(byKeyPath: "date", ascending: false)
+        let meals = selecteMeals()
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
