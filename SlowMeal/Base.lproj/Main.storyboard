@@ -88,7 +88,7 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="最近食べたご飯" id="29Y-yb-ffE">
-                        <barButtonItem key="rightBarButtonItem" title="Select" id="gy8-e2-rPQ">
+                        <barButtonItem key="rightBarButtonItem" title="Filter" id="gy8-e2-rPQ">
                             <connections>
                                 <action selector="pressedBarButtonItem:" destination="Soi-e6-qXi" id="aRc-Hg-Co9"/>
                             </connections>

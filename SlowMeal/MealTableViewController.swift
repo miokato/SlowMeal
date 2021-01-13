@@ -24,7 +24,7 @@ class MealTableViewController: UITableViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        barButtonItem.title = mealType.rawValue
+        navigationController?.navigationBar.topItem?.title = "最近食べた\(mealType.rawValue)"
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -38,7 +38,7 @@ class MealTableViewController: UITableViewController {
     }
     @IBAction func pressedBarButtonItem(_ sender: UIBarButtonItem) {
         mealType = mealType.next()
-        barButtonItem.title = mealType.rawValue
+        navigationController?.navigationBar.topItem?.title = "最近食べた\(mealType.rawValue)"
         tableView.reloadData()
     }
     
