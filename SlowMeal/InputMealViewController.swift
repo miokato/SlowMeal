@@ -11,6 +11,7 @@ import RealmSwift
 class InputMealViewController: UIViewController {
 
     @IBOutlet weak var inputMealTextField: UITextField!
+    @IBOutlet weak var inputSubMealTextField: UITextField!
     
     var realm: Realm!
     
@@ -20,16 +21,19 @@ class InputMealViewController: UIViewController {
         realm = try! Realm()
         
         inputMealTextField.delegate = self
+        inputSubMealTextField.delegate = self
 
     }
     
     @IBAction func pressedRegisterBtn(_ sender: UIButton) {
-        guard let mealName = inputMealTextField.text else {
+        guard let mealName = inputMealTextField.text,
+              let subMealName = inputSubMealTextField.text else {
             return
         }
         if mealName != "" {
             let meal = Meal()
             meal.name = mealName
+            meal.subMealName = subMealName
             meal.date = Date()
             
             try! realm.write {

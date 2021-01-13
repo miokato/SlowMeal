@@ -56,7 +56,8 @@ class MealTableViewController: UITableViewController {
             dateStr = f.string(from: date)
         }
         let name = meals[indexPath.row].name
-        let title = "\(dateStr) \(name)"
+        let subMealName = meals[indexPath.row].subMealName
+        let title = "\(dateStr) \(name)、\(subMealName)"
         
         cell.textLabel?.text = title
         return cell
