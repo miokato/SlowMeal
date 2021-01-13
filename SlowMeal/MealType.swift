@@ -13,6 +13,7 @@ enum MealType: String {
     case Lunch = "昼食"
     case Dinner = "夕食"
     case Other = "間食"
+    case All = "全部"
     
     static func getType(fromTime: Int) -> Self {
         switch fromTime {
@@ -26,4 +27,20 @@ enum MealType: String {
             return .Other
         }
     }
+    
+    func next() -> MealType {
+        switch self {
+        case .BreakFast:
+            return .Lunch
+        case .Lunch:
+            return .Dinner
+        case .Dinner:
+            return .Other
+        case .Other:
+            return .All
+        case .All:
+            return .BreakFast
+        }
+    }
 }
+

@@ -10,6 +10,10 @@ import RealmSwift
 
 class MealTableViewController: UITableViewController {
     
+    @IBOutlet weak var barButtonItem: UIBarButtonItem!
+    
+    var mealType: MealType = .All
+    
     var realm: Realm!
 
     override func viewDidLoad() {
@@ -19,6 +23,8 @@ class MealTableViewController: UITableViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        barButtonItem.title = mealType.rawValue
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -31,7 +37,9 @@ class MealTableViewController: UITableViewController {
         tableView.reloadData()
     }
     @IBAction func pressedBarButtonItem(_ sender: UIBarButtonItem) {
-
+        mealType = mealType.next()
+        barButtonItem.title = mealType.rawValue
+        tableView.reloadData()
     }
     
     // MARK: - Table view data source
@@ -42,19 +50,27 @@ class MealTableViewController: UITableViewController {
 //    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let allData = realm.objects(Meal.self)
-        return allData.count
+        var meals = realm.objects(Meal.self)
+        if mealType != .All {
+            meals = meals.filter("mealType == '\(mealType.rawValue)'")
+        }
+        return meals.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var meals = realm.objects(Meal.self)
+        if mealType != .All {
+            meals = meals.filter("mealType == '\(mealType.rawValue)'")
+        }
         meals = meals.sorted(byKeyPath: "date", ascending: false)
-                        
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
         let meal = meals[indexPath.row]
         let title = createTitle(meal: meal)
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = title
+        
         return cell
     }
     
