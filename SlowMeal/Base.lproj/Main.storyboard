@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="SlowMeal" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +59,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fxz-p7-vAj" secondAttribute="trailing" id="wWn-Ac-1El"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Main" id="HMO-tu-dAY"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="HMO-tu-dAY"/>
                     <connections>
                         <segue destination="4Ad-jl-bar" kind="presentation" identifier="InputModal" id="vq9-N7-MR2"/>
                     </connections>
@@ -276,7 +276,7 @@
         <scene sceneID="EUk-Jc-9E7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UCa-cx-TSr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" id="LxX-vN-0AI"/>
+                    <tabBarItem key="tabBarItem" title="History" image="table" catalog="system" id="LxX-vN-0AI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mjN-zd-heo">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -299,6 +299,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="table" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
