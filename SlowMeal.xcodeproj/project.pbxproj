@@ -12,6 +12,7 @@
 		9554E00825AC8D6D00A16E65 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554E00725AC8D6D00A16E65 /* Meal.swift */; };
 		9554E00925AC8D6D00A16E65 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554E00725AC8D6D00A16E65 /* Meal.swift */; };
 		95A5D4AB25AF1A8200637533 /* DetailMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A5D4AA25AF1A8200637533 /* DetailMealViewController.swift */; };
+		95A5D4B425AF2A2A00637533 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 95A5D4B325AF2A2A00637533 /* README.md */; };
 		95AF8A8525ADC5D500D00DBB /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AF8A8425ADC5D500D00DBB /* MealTableViewController.swift */; };
 		95B8A46B25AC756F009F6129 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B8A46A25AC756F009F6129 /* Constants.swift */; };
 		95B8A47025AC7ADB009F6129 /* InputMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B8A46F25AC7ADB009F6129 /* InputMealViewController.swift */; };
@@ -55,6 +56,7 @@
 		95116F8F25AE7D9700719818 /* MealType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealType.swift; sourceTree = "<group>"; };
 		9554E00725AC8D6D00A16E65 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		95A5D4AA25AF1A8200637533 /* DetailMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMealViewController.swift; sourceTree = "<group>"; };
+		95A5D4B325AF2A2A00637533 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		95AF8A8425ADC5D500D00DBB /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 		95B8A46A25AC756F009F6129 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		95B8A46F25AC7ADB009F6129 /* InputMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMealViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		95C6260525AC2DDB0006219E = {
 			isa = PBXGroup;
 			children = (
+				95A5D4B325AF2A2A00637533 /* README.md */,
 				95C6261025AC2DDB0006219E /* SlowMeal */,
 				95C6262725AC2DDC0006219E /* SlowMealTests */,
 				95C6263225AC2DDC0006219E /* SlowMealUITests */,
@@ -300,6 +303,7 @@
 			files = (
 				95C6261E25AC2DDC0006219E /* LaunchScreen.storyboard in Resources */,
 				95C6261B25AC2DDC0006219E /* Assets.xcassets in Resources */,
+				95A5D4B425AF2A2A00637533 /* README.md in Resources */,
 				95C6261925AC2DDB0006219E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
