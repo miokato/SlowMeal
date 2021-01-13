@@ -30,7 +30,10 @@ class MealTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
     }
+    @IBAction func pressedBarButtonItem(_ sender: UIBarButtonItem) {
 
+    }
+    
     // MARK: - Table view data source
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
@@ -46,23 +49,30 @@ class MealTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var meals = realm.objects(Meal.self)
         meals = meals.sorted(byKeyPath: "date", ascending: false)
+                        
+        let meal = meals[indexPath.row]
+        let title = createTitle(meal: meal)
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = title
+        return cell
+    }
+    
+    func createTitle(meal: Meal) -> String {
         let f = DateFormatter()
         f.dateStyle = .short
         f.timeStyle = .none
         f.locale = Locale(identifier: "ja_JP")
-        let date = meals[indexPath.row].date
+        let date = meal.date
         var dateStr = ""
-        let mealType = meals[indexPath.row].mealType
+        let mealType = meal.mealType
         if let date = date {
             dateStr = f.string(from: date)
         }
-        let name = meals[indexPath.row].name
-        let subMealName = meals[indexPath.row].subMealName
+        let name = meal.name
+        let subMealName = meal.subMealName
         let title = "\(dateStr) [\(mealType)] \(name)、\(subMealName)"
-        
-        cell.textLabel?.text = title
-        return cell
+        return title
     }
 
     /*
